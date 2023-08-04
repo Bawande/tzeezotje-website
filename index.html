@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>starter Gulp</title>
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="./styles/styles.min.css" />
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <nav class="header__navbar header-navbar">
+  <a class="header-navbar__brand" href="#">
+    <picture><source srcset="./images/logo_T-ZEEZ-TJE-white.webp" type="image/webp"><img src="./images/logo_T-ZEEZ-TJE-white.png" alt="логотип T-ZEEZ-TJE" /></picture>
+  </a>
+
+  <div class="header-navbar__nav offcanvas" id="id-offcanvas">
+    <button
+      type="button"
+      class="hamburger-btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Закрыть"
+    >
+      <span class="hamburger-btn-close__icon">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_cancel"></use>
+        </svg>
+      </span>
+    </button>
+
+    <ul class="header-navbar__nav-list">
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#"> &#192; la&#160;carte</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">Wijnkaart</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">Lunchmenu</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">Contact</a>
+      </li>
+    </ul>
+    <a href="tel:+3292825725" class="header-navbar__phone">
+      <span>+32 9 282 57 25</span>
+    </a>
+  </div>
+
+  <button
+    class="hamburger-btn"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#id-offcanvas"
+    aria-controls="offcanvas"
+  >
+    <span class="hamburger-btn__icon">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_menu"></use>
+      </svg>
+    </span>
+  </button>
+</nav>
+
+    <div class="header-hero">
+  <div class="header-hero__header">OPEN EVERYDAY 6AM&#160;&#8212; 9PM</div>
+  <div class="header-hero__title">
+    A&#160;bad day with lunch is&#160;better than a&#160;good day without it.
+  </div>
+  <div class="header-hero__footer">
+    <button
+      class="header-hero__booking-btn"
+      type="button"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Reserve a&#160;table
+    </button>
+    <div class="header-hero__social-btn social-btn --white">
+  <ul class="social-btn__list">
+    <li class="social-btn__item">
+      <a class="social-btn__link" href="#">Fb</a>
+    </li>
+
+    <li class="social-btn__item">
+      <a class="social-btn__link" href="#">Ig</a>
+    </li>
+
+    <li class="social-btn__item">
+      <a class="social-btn__link" href="#">Tw</a>
+    </li>
+
+    <li class="social-btn__item">
+      <a class="social-btn__link" href="#">Yt</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+
+  </div>
+</header>
+
+    <main class="main">
+      <section class="menu">
+  <div class="menu__container container">
+    <div class="menu__day-list">
+      <div class="menu__day-item">
+        <div class="menu__date">Woensdag 12/01</div>
+        <div class="menu__dish">
+          <span class="menu__first-dish">Salade met Serrano</span>
+          <span class="menu__separator"></span>
+          <span class="menu__second-dish">Steak Tartaar</span>
+        </div>
+      </div>
+
+      <div class="menu__day-item">
+        <div class="menu__date">Donderdag 13/01</div>
+        <div class="menu__dish">
+          <span class="menu__first-dish">Toast Roquefort</span>
+          <span class="menu__separator"></span>
+          <span class="menu__second-dish">Penne met Kip en&#160;Prei</span>
+        </div>
+      </div>
+
+      <div class="menu__day-item">
+        <div class="menu__date">Vrijdag 14/01</div>
+        <div class="menu__dish">
+          <span class="menu__first-dish">Verrassing van de&#160;Chef</span>
+          <span class="menu__separator"></span>
+          <span class="menu__second-dish">Penne met Kip en&#160;Prei</span>
+        </div>
+      </div>
+
+      <div class="menu__day-item">
+        <div class="menu__date">Vrijdag 15/01</div>
+        <div class="menu__dish">
+          <span class="menu__first-dish">Verrassing van de&#160;Chef</span>
+          <span class="menu__separator"></span>
+          <span class="menu__second-dish">Penne met Kip en&#160;Prei</span>
+        </div>
+      </div>
+
+      <div class="menu__day-item">
+        <div class="menu__date">Vrijdag 16/01</div>
+        <div class="menu__dish">
+          <span class="menu__first-dish">Verrassing van de&#160;Chef</span>
+          <span class="menu__separator"></span>
+          <span class="menu__second-dish">Penne met Kip en&#160;Prei</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu__gallery">
+      <div class="menu__gallery-item">
+        <div class="menu__gallery-left-photo">
+          <img
+            src="./images/menu_gallery-left-photo.jpg"
+            alt="Interior photo 1"
+          />
+        </div>
+        <div class="menu__gallery-right-photo">
+          <img
+            src="./images/menu_gallery-right-photo.jpg"
+            alt="Interior photo 2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews">
+  <div class="reviews__container container">
+    <div class="swiper reviews-swiper" id="id-reviews-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide reviews__item">
+          <div class="reviews-item__wrap">
+  <span class="reviews-item__quotes"> </span>
+  <h3 class="reviews-item__title">Goede service, lekker eten, toffe ambiance</h3>
+  <p class="reviews-item__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&#160;labore et&#160;dolore magna aliquyam erat, sed diam voluptua. At&#160;vero eos et&#160;accusam et&#160;justo duo dolores et&#160;ea&#160;rebum. Stet clita kasd gubergren.</p>
+  <div class="reviews-item__username">ALAIN HEYNDRICKX 1</div>
+</div>
+
+        </div>
+        <div class="swiper-slide reviews__item">
+          <div class="reviews-item__wrap">
+  <span class="reviews-item__quotes"> </span>
+  <h3 class="reviews-item__title">Goede service, lekker eten, toffe ambiance</h3>
+  <p class="reviews-item__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&#160;labore et&#160;dolore magna aliquyam erat, sed diam voluptua. At&#160;vero eos et&#160;accusam et&#160;justo duo dolores et&#160;ea&#160;rebum. </p>
+  <div class="reviews-item__username">ALAIN HEYNDRICKX 2</div>
+</div>
+
+        </div>
+        <div class="swiper-slide reviews__item">
+          <div class="reviews-item__wrap">
+  <span class="reviews-item__quotes"> </span>
+  <h3 class="reviews-item__title">Goede service, lekker eten, toffe ambiance</h3>
+  <p class="reviews-item__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut&#160;labore et&#160;dolore magna aliquyam erat, sed diam voluptua. </p>
+  <div class="reviews-item__username">ALAIN HEYNDRICKX 3</div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="reviews-button-prev swiper-button-prev custom-button-prev">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_swiper-arrow"
+          ></use>
+        </svg>
+      </div>
+      <div class="reviews-button-next swiper-button-next custom-button-next">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_swiper-arrow"
+          ></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="advantages">
+  <div class="advantages__container container">
+    <div class="advantages__list">
+      <div class="advantages__item --left">
+  <div class="advantages__content-wrap">
+    <h3 class="advantages__title">LEKKER ETEN</h3>
+    <p class="advantages__text">Eten gaat niet over indruk maken op&#160;mensen. Het gaat erom dat ze&#160;zich op&#160;hun gemak voelen. Dat is&#160;onze filosofie, goed eten in&#160;een goede sfeer.</p>
+  </div>
+  <div class="advantages__photo">
+    <picture><source srcset="./images/advantages_first-photo.webp" type="image/webp"><img src="./images/advantages_first-photo.jpg" alt="foto LEKKER ETEN" /></picture>
+  </div>
+</div>
+
+      <div class="advantages__item --right">
+  <div class="advantages__content-wrap">
+    <h3 class="advantages__title">TOFFE AMBIANCE</h3>
+    <p class="advantages__text">Het cre&#235;ren van de&#160;juiste sfeer is&#160;zeer belangrijk voor&#160;ons. We&#160;nemen onze tijd om&#160;te&#160;zorgen dat alle elementen bijdragen aan de&#160;juiste setting.</p>
+  </div>
+  <div class="advantages__photo">
+    <picture><source srcset="./images/advantages_second-photo.webp" type="image/webp"><img src="./images/advantages_second-photo.jpg" alt="foto TOFFE AMBIANCE" /></picture>
+  </div>
+</div>
+
+      <div class="advantages__item --left">
+  <div class="advantages__content-wrap">
+    <h3 class="advantages__title">LEKKERE COCKTAILS</h3>
+    <p class="advantages__text">Ons doel is&#160;simpel: een gastvrije plek bieden waar u&#160;kunt genieten van een onvergetelijke cocktail, een goed gesprek en&#160;lekker eten.</p>
+  </div>
+  <div class="advantages__photo">
+    <picture><source srcset="./images/advantages_third-photo.webp" type="image/webp"><img src="./images/advantages_third-photo.jpg" alt="foto LEKKERE COCKTAILS" /></picture>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+      <section class="gallery">
+  <div class="gallery__container container">
+    <div class="gallery__header">
+      <div class="gallery__content-wrap">
+        <h2 class="gallery__title">Sfeerfoto&#8217;s</h2>
+        <p class="gallery__lider">
+          De&#160;beste manier om&#160;de&#160;sfeer te&#160;ervaren is&#160;eens langskomen.
+        </p>
+        <p class="gallery__lider">
+          In&#160;tussentijd hebben we&#160;hier alvast wat foto&#8217;s voor je&#160;klaar.
+        </p>
+      </div>
+
+      <div class="gallery__navbar">
+        <div class="swiper-button-prev gallery-button-prev custom-button-prev">
+          <svg class="svg-icon-use">
+            <use
+              xlink:href="./images/sprite-mono.svg#icon-mono_swiper-arrow"
+            ></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next gallery-button-next custom-button-next">
+          <svg class="svg-icon-use">
+            <use
+              xlink:href="./images/sprite-mono.svg#icon-mono_swiper-arrow"
+            ></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery__photos">
+    <div class="swiper gallery-swiper" id="id-gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide gallery-slide">
+          <div class="gallery__photo-wrap">
+            <picture><source srcset="./images/gallery-photo-1.webp" type="image/webp"><img src="./images/gallery-photo-1.jpg" alt="фото 1" /></picture>
+          </div>
+        </div>
+        <div class="swiper-slide gallery-slide">
+          <div class="gallery__photo-wrap">
+            <picture><source srcset="./images/gallery-photo-2.webp" type="image/webp"><img src="./images/gallery-photo-2.jpg" alt="фото 2" /></picture>
+          </div>
+        </div>
+        <div class="swiper-slide gallery-slide">
+          <div class="gallery__photo-wrap">
+            <picture><source srcset="./images/gallery-photo-3.webp" type="image/webp"><img src="./images/gallery-photo-3.jpg" alt="фото 3" /></picture>
+          </div>
+        </div>
+        <div class="swiper-slide gallery-slide">
+          <div class="gallery__photo-wrap">
+            <picture><source srcset="./images/gallery-photo-2.webp" type="image/webp"><img src="./images/gallery-photo-2.jpg" alt="фото 3" /></picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="feedback">
+  <div class="feedback__container container">
+    <div class="feedback__contacts">
+      <h2 class="feedback__contacts-title">Contacts</h2>
+
+      <ul class="feedback__contacts-list">
+        <li class="feedback__contacts-item">
+          <div class="contacts-item">
+  <span class="contacts-item__icon --phone"></span>
+  <div class="contacts-item__wrap">
+    <span class="contacts-item__lable">Phone Number</span>
+    <span class="contacts-item__contact">
+
+            <a href="href="tel:+3292825725"">+32 9 282 57 25</a>
+
+          </span>
+  </div>
+</div>
+
+        </li>
+
+        <li class="feedback__contacts-item">
+          <div class="contacts-item">
+  <span class="contacts-item__icon --email"></span>
+  <div class="contacts-item__wrap">
+    <span class="contacts-item__lable">Email</span>
+    <span class="contacts-item__contact">
+
+            <a href="href="mailto:info@email.com"">info@email.com</a>
+
+          </span>
+  </div>
+</div>
+
+        </li>
+
+        <li class="feedback__contacts-item">
+          <div class="contacts-item">
+  <span class="contacts-item__icon --hours"></span>
+  <div class="contacts-item__wrap">
+    <span class="contacts-item__lable">Opening Hours</span>
+    <span class="contacts-item__contact">
+
+            Everyday from 6 AM&#160;&#8212; 9 PM
+
+          </span>
+  </div>
+</div>
+
+        </li>
+
+        <li class="feedback__contacts-item">
+          <div class="contacts-item">
+  <span class="contacts-item__icon --address"></span>
+  <div class="contacts-item__wrap">
+    <span class="contacts-item__lable">Map Street</span>
+    <span class="contacts-item__contact">
+
+            Jl. Raya Surabaya 2787
+
+          </span>
+  </div>
+</div>
+
+        </li>
+      </ul>
+    </div>
+    <div class="feedback__questions">
+      <h2 class="feedback__questions-title">have any questions?</h2>
+
+      <form
+        action=""
+        id="id-questions-form"
+        class="feedback__questions-form questions-form"
+      >
+        <div class="questions-form__firstset">
+          <div class="questions-form__field-input">
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Input your name"
+              required
+            />
+          </div>
+          <div class="questions-form__field-input">
+            <label>Email</label>
+            <input
+              type="email"
+              name="Email"
+              placeholder="Input your email"
+              required
+            />
+          </div>
+          <div class="questions-form__field-textarea">
+            <label>Speciale Request</label>
+            <textarea
+              name="Request"
+              placeholder="Input your special request"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          id="questions-form-submit"
+          class="questions-form__submit"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+      <section class="map">
+  <div class="map__container container">
+    <div class="map__wrap">
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A796fa06321d65e4285d172a433c931b092ef0fe46a4d6a6bb6843e2d547f2d76&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="footer__container container">
+    <a class="footer__brand" href="#">
+      <picture><source srcset="./images/logo_T-ZEEZ-TJE-black.webp" type="image/webp"><img src="./images/logo_T-ZEEZ-TJE-black.png" alt="логотип T-ZEEZ-TJE" /></picture>
+    </a>
+
+    <div class="footer__social-btn-wrap social-btn --black">
+  <ul class="social-btn__list">
+    <li class="social-btn__item">
+      <a class="social-btn__link" href="#">Fb</a>
+    </li>
+
+    <li class="social-btn__item">
+      <a class="social-btn__link" href="#">Ig</a>
+    </li>
+
+    <li class="social-btn__item">
+      <a class="social-btn__link" href="#">Tw</a>
+    </li>
+
+    <li class="social-btn__item">
+      <a class="social-btn__link" href="#">Yt</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</footer>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form
+          action=""
+          id="id-callback-form"
+          class="callback__form questions-form"
+        >
+          <div class="questions-form__firstset">
+            <div class="questions-form__field-input">
+              <label>Name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Input your name"
+                required
+              />
+            </div>
+            <div class="questions-form__field-input">
+              <label>Email</label>
+              <input
+                type="email"
+                name="Email"
+                placeholder="Input your email"
+                required
+              />
+            </div>
+            <div class="questions-form__field-textarea">
+              <label>Speciale Request</label>
+              <textarea
+                name="Request"
+                placeholder="Input your special request"
+              ></textarea>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            id="callback-form-submit"
+            class="questions-form__submit"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+
+      <button type="button" class="modal-button-close" data-bs-dismiss="modal">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_cancel"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+    <script src="./scripts/swiper-bundle.min.js"></script>
+<script src="./scripts/scripts.min.js"></script>
+
+  </body>
+</html>
