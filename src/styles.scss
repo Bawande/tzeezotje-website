@@ -1,0 +1,21 @@
+// ---
+@import "./helpers/libs/swiper/swiper";
+
+// @import "./helpers/libs/swiper/swiper-bundle.scss";
+
+// --- common styles
+@import "./styles/";
+
+// --- layout styles
+@import "./layout/header/styles/";
+@import "./layout/footer/styles/";
+@import "./layout/menu/styles/";
+@import "./layout/reviews/styles/";
+@import "./layout/advantages/styles/";
+@import "./layout/gallery/styles/";
+@import "./layout/feedback/styles/";
+@import "./layout/map/styles/";
+@import "./layout/modal-callback/styles/";
+
+// --- components
+@import "./components/social-btn/styles/";

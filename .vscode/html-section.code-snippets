@@ -1,0 +1,35 @@
+{
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+
+  "section-container": {
+    "scope": "html",
+    "prefix": "section-container",
+    "body": [
+      "<section$1 class=\"$2\">",
+      "   <div class=\"$2__container container\">$2 block</div>",
+      "</section$1>",
+      "$3"
+    ],
+    "description": ""
+  },
+
+  "section-no-container": {
+    "scope": "html",
+    "prefix": "section-no-container",
+    "body": [
+      "<section$1 class=\"$2\">",
+      "   <div class=\"$2__wrapper\">$2 block</div>",
+      "</section$1>",
+      "$3"
+    ],
+    "description": ""
+  }
+}

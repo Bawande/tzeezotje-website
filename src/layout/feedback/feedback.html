@@ -1,0 +1,99 @@
+<section class="feedback">
+  <div class="feedback__container container">
+    <div class="feedback__contacts">
+      <h2 class="feedback__contacts-title">Contacts</h2>
+
+      <ul class="feedback__contacts-list">
+        <li class="feedback__contacts-item">
+          <!-- prettier-ignore -->
+          @@include('src\layout\feedback\parts\contacts-item.html', {
+            "iconPrefix": "--phone",
+            "label": "Phone Number",
+            "contact": "+32 9 282 57 25",
+            "link": true,
+            "href": "href=\"tel:+3292825725\""
+          })
+        </li>
+
+        <li class="feedback__contacts-item">
+          <!-- prettier-ignore -->
+          @@include('src\layout\feedback\parts\contacts-item.html', {
+            "iconPrefix": "--email",
+            "label": "Email",
+            "contact": "info@email.com",
+            "link": true,
+            "href": "href=\"mailto:info@email.com\""
+          })
+        </li>
+
+        <li class="feedback__contacts-item">
+          <!-- prettier-ignore -->
+          @@include('src\layout\feedback\parts\contacts-item.html', {
+            "iconPrefix": "--hours",
+            "label": "Opening Hours",
+            "contact": "Everyday from 6 AM - 9 PM",
+            "link": false,
+            "href": ""
+          })
+        </li>
+
+        <li class="feedback__contacts-item">
+          <!-- prettier-ignore -->
+          @@include('src\layout\feedback\parts\contacts-item.html', {
+            "iconPrefix": "--address",
+            "label": "Map Street",
+            "contact": "Jl. Raya Surabaya 2787",
+            "link": false,
+            "href": ""
+          })
+        </li>
+      </ul>
+    </div>
+    <div class="feedback__questions">
+      <h2 class="feedback__questions-title">have any questions?</h2>
+
+      <form
+        action=""
+        id="id-questions-form"
+        class="feedback__questions-form questions-form"
+      >
+        <div class="questions-form__firstset">
+          <div class="questions-form__field-input">
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Input your name"
+              required
+            />
+          </div>
+          <div class="questions-form__field-input">
+            <label>Email</label>
+            <input
+              type="email"
+              name="Email"
+              placeholder="Input your email"
+              required
+            />
+          </div>
+          <div class="questions-form__field-textarea">
+            <label>Speciale Request</label>
+            <textarea
+              name="Request"
+              placeholder="Input your special request"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          id="questions-form-submit"
+          class="questions-form__submit"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

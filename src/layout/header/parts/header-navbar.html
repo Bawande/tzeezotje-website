@@ -1,0 +1,52 @@
+<nav class="header__navbar header-navbar">
+  <a class="header-navbar__brand" href="#">
+    <img src="./images/logo_T-ZEEZ-TJE-white.png" alt="логотип T-ZEEZ-TJE" />
+  </a>
+
+  <div class="header-navbar__nav offcanvas" id="id-offcanvas">
+    <button
+      type="button"
+      class="hamburger-btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Закрыть"
+    >
+      <span class="hamburger-btn-close__icon">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_cancel"></use>
+        </svg>
+      </span>
+    </button>
+
+    <ul class="header-navbar__nav-list">
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#"> À la carte</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">Wijnkaart</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">Lunchmenu</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">Contact</a>
+      </li>
+    </ul>
+    <a href="tel:+3292825725" class="header-navbar__phone">
+      <span>+32 9 282 57 25</span>
+    </a>
+  </div>
+
+  <button
+    class="hamburger-btn"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#id-offcanvas"
+    aria-controls="offcanvas"
+  >
+    <span class="hamburger-btn__icon">
+      <svg class="svg-icon-use">
+        <use xlink:href="./images/sprite-mono.svg#icon-mono_menu"></use>
+      </svg>
+    </span>
+  </button>
+</nav>

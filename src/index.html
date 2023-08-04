@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- <head> -->
+  @@include('src/parts/head.html', {"title": "starter Gulp" })
+  <!-- </head> -->
+
+  <body>
+    @@include('src\layout\header\header.html')
+    <main class="main">
+      <!-- prettier-ignore -->
+      @@include('src\layout\menu\menu.html')
+      <!-- prettier-ignore -->
+      @@include('src\layout\reviews\reviews.html')
+      <!-- prettier-ignore -->
+      @@include('src\layout\advantages\advantages.html')
+      <!-- prettier-ignore -->
+      @@include('src\layout\gallery\gallery.html')
+      <!-- prettier-ignore -->
+      @@include('src\layout\feedback\feedback.html')
+      <!-- prettier-ignore -->
+      @@include('src\layout\map\map.html')
+    </main>
+
+    @@include('src\layout\footer\footer.html')
+    @@include('src\layout\modal-callback\modal-callback.html')
+    <!-- <script> -->
+    @@include('src\parts\scripts.html')
+    <!-- </script> -->
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<section class="reviews">
+  <div class="reviews__container container">
+    <div class="swiper reviews-swiper" id="id-reviews-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide reviews__item">
+          <!-- prettier-ignore -->
+          @@include('src\layout\reviews\parts\reviews-item.html', {
+            "title": "Goede service, lekker eten, toffe ambiance",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.",
+            "name": "ALAIN HEYNDRICKX 1"
+          })
+        </div>
+        <div class="swiper-slide reviews__item">
+          <!-- prettier-ignore -->
+          @@include('src\layout\reviews\parts\reviews-item.html', {
+            "title": "Goede service, lekker eten, toffe ambiance",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. ",
+            "name": "ALAIN HEYNDRICKX 2"
+          })
+        </div>
+        <div class="swiper-slide reviews__item">
+          <!-- prettier-ignore -->
+          @@include('src\layout\reviews\parts\reviews-item.html', {
+            "title": "Goede service, lekker eten, toffe ambiance",
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
+            "name": "ALAIN HEYNDRICKX 3"
+          })
+        </div>
+      </div>
+
+      <div class="reviews-button-prev swiper-button-prev custom-button-prev">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_swiper-arrow"
+          ></use>
+        </svg>
+      </div>
+      <div class="reviews-button-next swiper-button-next custom-button-next">
+        <svg class="svg-icon-use">
+          <use
+            xlink:href="./images/sprite-mono.svg#icon-mono_swiper-arrow"
+          ></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>

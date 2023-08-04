@@ -1,0 +1,21 @@
+<div class="header-hero">
+  <div class="header-hero__header">OPEN EVERYDAY 6AM - 9PM</div>
+  <div class="header-hero__title">
+    A bad day with lunch is better than a good day without it.
+  </div>
+  <div class="header-hero__footer">
+    <button
+      class="header-hero__booking-btn"
+      type="button"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Reserve a table
+    </button>
+    <!-- prettier-ignore -->
+    @@include('src\components\social-btn\social-btn.html', {
+      "parent": "header-hero__social-btn",
+      "prefix": "--white"
+    })
+  </div>
+</div>

@@ -1,0 +1,41 @@
+.gallery-swiper {
+  position: relative;
+
+  width: 100%;
+  height: 646px;
+}
+
+.gallery-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  background: transparent;
+}
+
+.gallery-button-prev,
+.gallery-button-next {
+  position: relative;
+  top: auto;
+  right: auto;
+  left: auto;
+
+  margin-top: auto;
+}
+
+// @media (max-width: 1024px)
+
+@media (max-width: 1024px) {
+  .gallery-swiper {
+    height: 400px;
+  }
+}
+
+// @media (max-width: 415px)
+
+@media (max-width: 415px) {
+  .gallery-swiper {
+    height: 300px;
+  }
+}

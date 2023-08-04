@@ -1,0 +1,40 @@
+// primary - Устанавливает цвет текста на основной цвет темы
+
+$primary-border-radius: 8px;
+$secondary-border-radius: 4px;
+
+// --- theme default
+$white: white;
+$black: black;
+
+// --- theme color
+$primary-color: #000000;
+$secondary-color: #808080;
+
+// --- theme background
+$background: #FFF;
+
+// --- accent
+$accent: #D3B47F;
+
+// --- surface
+$primary-surface: #3A4574;
+$secondary-surface: #D3B47F;
+$on-surface: #FFF;
+
+// --- border
+$border-line: #E7E7E7;
+
+// focus
+$focus: lightblue;
+
+// grey
+$grey-11: hsl(0deg 0% 89%);
+$grey-7: hsl(0deg 0% 93%);
+$grey-4: hsl(0deg 0% 94%);
+
+// messages
+$danger: #ae0a0a;
+$success: #2ECD70;
+$info: #F0CE41;
+$warning: #F1C30F;

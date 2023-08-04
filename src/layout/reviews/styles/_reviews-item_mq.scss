@@ -1,0 +1,111 @@
+// @media (max-width: 1180px)
+
+@media (max-width: 1180px) {
+  .reviews-item {
+    &__wrap {
+      max-width: 590px;
+    }
+
+    &__quotes {}
+
+    &__title {}
+
+    &__text {}
+
+    &__username {}
+  }
+}
+
+// @media (max-width: 640px)
+
+@media (max-width: 640px) {
+  .reviews-item {
+    &__wrap {
+      max-width: 80%;
+    }
+
+    &__quotes {
+      width: 60px;
+
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+
+      font-size: 14px;
+      line-height: 2.3;
+    }
+
+    &__username {
+      font-size: 18px;
+    }
+  }
+}
+
+// @media (max-width: 480px)
+
+@media (max-width: 480px) {
+  .reviews-item {
+    &__wrap {}
+
+    &__quotes {
+      width: 50px;
+      height: 36px;
+      margin-bottom: 14px;
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    &__text {
+      line-height: 1.8;
+    }
+
+    &__username {
+      font-size: 16px;
+    }
+  }
+}
+
+// @media (max-width: 360px)
+
+@media (max-width: 360px) {
+  .reviews-item {
+    &__wrap {}
+
+    &__quotes {}
+
+    &__title {
+      line-height: 1.3;
+    }
+
+    &__text {
+      font-size: 13px;
+    }
+
+    &__username {
+      font-size: 11px;
+    }
+  }
+}
+
+/*
+.reviews-item {
+  &__wrap {}
+
+  &__quotes {}
+
+  &__title {}
+
+  &__text {}
+
+  &__username {}
+}
+*/

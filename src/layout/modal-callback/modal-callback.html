@@ -1,0 +1,72 @@
+<!-- Кнопка-триггер модального окна -->
+<!-- <button
+  type="button"
+  class="btn btn-primary"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal"
+>
+  Запустите демо модального окна
+</button> -->
+
+<!-- Модальное окно -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form
+          action=""
+          id="id-callback-form"
+          class="callback__form questions-form"
+        >
+          <div class="questions-form__firstset">
+            <div class="questions-form__field-input">
+              <label>Name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Input your name"
+                required
+              />
+            </div>
+            <div class="questions-form__field-input">
+              <label>Email</label>
+              <input
+                type="email"
+                name="Email"
+                placeholder="Input your email"
+                required
+              />
+            </div>
+            <div class="questions-form__field-textarea">
+              <label>Speciale Request</label>
+              <textarea
+                name="Request"
+                placeholder="Input your special request"
+              ></textarea>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            id="callback-form-submit"
+            class="questions-form__submit"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+
+      <button type="button" class="modal-button-close" data-bs-dismiss="modal">
+        <svg class="svg-icon-use">
+          <use xlink:href="./images/sprite-mono.svg#icon-mono_cancel"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>

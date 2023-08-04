@@ -1,0 +1,25 @@
+.advantages {
+  padding-top: 109px;
+  padding-bottom: 80px;
+
+  &__container {}
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+// @media (max-width: 640px)
+
+@media (max-width: 640px) {
+  .advantages {
+    padding-top: 70px;
+    padding-bottom: 60px;
+
+    &__list {
+      gap: 20px;
+    }
+  }
+}

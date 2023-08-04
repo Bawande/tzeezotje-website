@@ -1,0 +1,43 @@
+// @media (max-width: 768px)
+
+@media (max-width: 768px) {
+  .contacts-item {
+    &__icon {
+      width: 54px;
+      height: 54px;
+
+      &::after {}
+    }
+
+    &__wrap {}
+
+    &__lable {
+      font-size: 14px;
+      line-height: 28px;
+    }
+
+    &__contact {
+      font-size: 18px;
+    }
+  }
+}
+
+/*
+
+.contacts-item {
+  &__icon {
+    &::after {
+    }
+  }
+
+  &__wrap {
+  }
+
+  &__lable {
+  }
+
+  &__contact {
+  }
+}
+
+*/

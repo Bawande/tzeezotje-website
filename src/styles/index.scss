@@ -1,0 +1,43 @@
+// --- resets
+@import "./resets/base-reset";
+
+// --- common
+@import "./common/variables";
+@import "./common/fonts";
+@import "./common/container";
+
+// --- mixin
+@import "./mixins/hover-button";
+
+// --- UI
+@import "./UI/field-check";
+@import "./UI/swiper-nav-arrow";
+
+// --- body
+body {
+
+  min-width: 320px;
+  // overflow-x: hidden;
+
+  color: $primary-color;
+
+  font-size: 16px;
+
+  font-family:
+    "s-poppins",
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fsira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  line-height: 1.3;
+
+  background-color: $background;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

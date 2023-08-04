@@ -1,0 +1,69 @@
+/*
+
+## Толщины шрифтов в CSS
+Thin / Hair	100
+Extra Light	200
+Light	300
+Regular	400
+Medium	500
+Semi Bold	600
+Bold	700
+Extra Bold	800
+Black / Heavy / Ultra	900
+
+*/
+
+@font-face {
+  font-weight: 400;
+  font-family: "s-inter";
+  font-style: normal;
+  src:
+    local("inter-latin-400"),
+    url("../fonts/inter-latin-400.woff2") format("woff2"),
+    url("../fonts/inter-latin-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "s-poppins";
+  font-style: normal;
+  src:
+    local("poppins-latin-400"),
+    url("../fonts/poppins-latin-400.woff2") format("woff2"),
+    url("../fonts/poppins-latin-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "s-poppins";
+  font-style: normal;
+  src:
+    local("poppins-latin-500"),
+    url("../fonts/poppins-latin-500.woff2") format("woff2"),
+    url("../fonts/poppins-latin-500.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: "s-poppins";
+  font-style: normal;
+  src:
+    local("poppins-latin-600"),
+    url("../fonts/poppins-latin-600.woff2") format("woff2"),
+    url("../fonts/poppins-latin-600.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "s-poppins";
+  font-style: normal;
+  src:
+    local("poppins-latin-700"),
+    url("../fonts/poppins-latin-700.woff2") format("woff2"),
+    url("../fonts/poppins-latin-700.woff") format("woff");
+  font-display: swap;
+}

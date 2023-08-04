@@ -1,0 +1,61 @@
+{
+  // Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Swiper HTML Layout": {
+    "scope": "html",
+    "prefix": "_swiper-layout",
+    "body": [
+      "<div class=\"swiper\" id=\"id-swiper$1\">",
+      "  <div class=\"swiper-wrapper\">",
+      "    <div class=\"swiper-slide\">Slide 1</div>",
+      "    <div class=\"swiper-slide\">Slide 2</div>",
+      "    <div class=\"swiper-slide\">Slide 3</div>",
+      "  </div>",
+      "  <div class=\"swiper-pagination\"></div>",
+      "",
+      "  <div class=\"swiper-button-prev\"></div>",
+      "  <div class=\"swiper-button-next\"></div>",
+      "",
+      "  <div class=\"swiper-scrollbar\"></div>",
+      "</div>"
+    ],
+    "description": "Now, we need to add basic Swiper layout to our app"
+  },
+
+  "CSS Styles/Size": {
+    "scope": "css, scss",
+    "prefix": "_swiper-styles",
+    "body": [".swiper {", "  width: $1;", "  height: $1;", "}"],
+    "description": "n addition to Swiper's CSS styles, we may need to add some custom styles to set Swiper size"
+  },
+
+  "Initialize Swiper": {
+    "scope": "javascript",
+    "prefix": "_swiper-script",
+    "body": [
+      "const swiper = new Swiper('#id-swiper$1', {",
+      "  direction: 'horizontal',",
+      "  loop: true,",
+      "",
+      "  pagination: {",
+      "    el: '.swiper-pagination',",
+      "  },",
+      "",
+      "  navigation: {",
+      "    nextEl: '.swiper-button-next',",
+      "    prevEl: '.swiper-button-prev',",
+      "  },",
+      "",
+      "  scrollbar: {",
+      "    el: '.swiper-scrollbar',",
+      "  },",
+      "});"
+    ],
+    "description": "Finally, we need to initialize Swiper in JS"
+  }
+}

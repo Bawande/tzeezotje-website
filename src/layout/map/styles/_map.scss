@@ -1,0 +1,24 @@
+.map {
+
+  &__container {}
+
+  &__wrap {
+    width: 100%;
+    height: 547px;
+
+    background-color: $border-line;
+  }
+}
+
+
+// @media (max-width: 415px)
+
+@media (max-width: 415px) {
+  .map {
+    &__container {}
+
+    &__wrap {
+      height: 400px;
+    }
+  }
+}

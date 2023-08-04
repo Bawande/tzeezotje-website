@@ -1,0 +1,16 @@
+<div class="contacts-item">
+  <span class="contacts-item__icon @@iconPrefix"></span>
+  <div class="contacts-item__wrap">
+    <span class="contacts-item__lable">@@label</span>
+    <span class="contacts-item__contact">
+      <!-- prettier-ignore -->
+      @@if (link === true) {
+      <a href="@@href">@@contact</a>
+      }
+      <!-- prettier-ignore -->
+      @@if (link === false) {
+      @@contact
+      }
+    </span>
+  </div>
+</div>
